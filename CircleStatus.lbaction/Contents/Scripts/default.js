@@ -153,10 +153,6 @@ function cancel(build) {
 
     data = JSON.parse(data);
 
-    for (key of data) {
-        LaunchBar.log(`${key}: ${data[key]}`);
-    }
-
     if (!data.canceled) {
         return [
             {
